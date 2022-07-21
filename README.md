@@ -4,11 +4,11 @@
 ##  Table of Contents
 
 - [Named Entity Recognition and Its Application to Phishing Detection](#named-entity-recognition-and-its-application-to-phishing-detection)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Technology Used](#technology-used)
-    - [Python](#python)
-    - [External dependencies](#external-dependencies)
+  * [Table of Contents](#table-of-contents)
+  * [Introduction](#introduction)
+  * [Technology Used](#technology-used)
+    + [Python](#python)
+    + [External dependencies](#external-dependencies)
       - [Pandas](#pandas)
       - [PyTorch](#pytorch)
       - [tqdm](#tqdm)
@@ -16,25 +16,16 @@
       - [spaCy](#spacy)
       - [NumPy](#numpy)
       - [flair](#flair)
-      - [spaCy models](#spacy-models)
-  - [Setup](#setup)
-    - [1) Download Python 3.9+](#1-download-python-39)
-      - [Linux](#linux)
-        - [Windows](#windows)
-    - [2) Virtual Environment](#2-virtual-environment)
-      - [Linux](#linux-1)
-      - [Windows](#windows-1)
-  - [Dataset Preparation](#dataset-preparation)
-    - [Github](#github)
-    - [Non-Github](#non-github)
-    - [Alternative](#alternative)
-  - [Launch](#launch)
-    - [Enron Experiment](#enron-experiment)
-    - [Annotation Experiment](#annotation-experiment)
-    - [Benchmark Experiment](#benchmark-experiment)
-    - [Divergence Experiment](#divergence-experiment)
-    - [ROC Experiment](#roc-experiment)
-  - [Hardware Requirements](#hardware-requirements)
+      - [spaCy models](#en-core-web--sm--md--lg--trf-)
+  * [Setup](#setup)
+  * [Dataset Preparation](#dataset-preparation)
+  * [Launch](#launch)
+    + [Enron Experiment](#enron-experiment)
+    + [Annotation Experiment](#annotation-experiment)
+    + [Benchmark Experiment](#benchmark-experiment)
+    + [Divergence Experiment](#divergence-experiment)
+    + [ROC Experiment](#roc-experiment)
+  * [Hardware Requirements](#hardware-requirements)
 
 ##  Introduction
 
@@ -108,7 +99,6 @@ sudo apt -y update
 sudo apt -y install software-properties-common
 sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt -y install python3.9
-sudo apt -y install python3.9-venv
 alias python=python3.9  # (optional) to simplify the scripts, otherwise, for instance, python3.9 enron_experiment.py [args] is required
 ```
 - Taken from https://linuxize.com/post/how-to-install-python-3-9-on-ubuntu-20-04/
@@ -140,26 +130,14 @@ pip install -e .
 
 ## Dataset Preparation
 
-### [Github](https://github.com/poptomas/ner-pd)
-
-```enron.csv``` was uploaded via git lfs to the git repository.
-
-### Non-Github
-
-```enron.csv``` was added with the rest of the files
-
-### Alternative
-
-Enron experiment and annotation experiment rely on the Enron Email Dataset
+Enron experiment and annotation experiment rely on the [Enron Email Dataset](https://www.cs.cmu.edu/~enron/)
 which needs to be downloaded, unzipped, and serialized into the CSV format 
-with the compliant structure of an alternative published on [Kaggle](https://www.kaggle.com/datasets/wcukierski/enron-email-dataset):
+with the compliant structure of the Enron email dataset published on [Kaggle](https://www.kaggle.com/datasets/wcukierski/enron-email-dataset):
 
 ```
 python enron_download.py
 ```
 
-Alternatively, the Enron email dataset can be downloaded directly from [Kaggle](https://www.kaggle.com/datasets/wcukierski/enron-email-dataset)
-and moved to the root directory of the project. It was tested that both approaches are interchangeable for the experiments.
 For the other experiments (benchmark, divergence, and ROC), example data
 are provided (contained in the ```data``` directory) to run the experiments with them.
 
