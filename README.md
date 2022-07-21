@@ -4,11 +4,11 @@
 ##  Table of Contents
 
 - [Named Entity Recognition and Its Application to Phishing Detection](#named-entity-recognition-and-its-application-to-phishing-detection)
-  * [Table of Contents](#table-of-contents)
-  * [Introduction](#introduction)
-  * [Technology Used](#technology-used)
-    + [Python](#python)
-    + [External dependencies](#external-dependencies)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Technology Used](#technology-used)
+    - [Python](#python)
+    - [External dependencies](#external-dependencies)
       - [Pandas](#pandas)
       - [PyTorch](#pytorch)
       - [tqdm](#tqdm)
@@ -16,16 +16,25 @@
       - [spaCy](#spacy)
       - [NumPy](#numpy)
       - [flair](#flair)
-      - [spaCy models](#en-core-web--sm--md--lg--trf-)
-  * [Setup](#setup)
-  * [Dataset Preparation](#dataset-preparation)
-  * [Launch](#launch)
-    + [Enron Experiment](#enron-experiment)
-    + [Annotation Experiment](#annotation-experiment)
-    + [Benchmark Experiment](#benchmark-experiment)
-    + [Divergence Experiment](#divergence-experiment)
-    + [ROC Experiment](#roc-experiment)
-  * [Hardware Requirements](#hardware-requirements)
+      - [spaCy models](#spacy-models)
+  - [Setup](#setup)
+    - [1) Download Python 3.9+](#1-download-python-39)
+      - [Linux](#linux)
+        - [Windows](#windows)
+    - [2) Virtual Environment](#2-virtual-environment)
+      - [Linux](#linux-1)
+      - [Windows](#windows-1)
+  - [Dataset Preparation](#dataset-preparation)
+    - [Github](#github)
+    - [Non-Github](#non-github)
+    - [Alternative](#alternative)
+  - [Launch](#launch)
+    - [Enron Experiment](#enron-experiment)
+    - [Annotation Experiment](#annotation-experiment)
+    - [Benchmark Experiment](#benchmark-experiment)
+    - [Divergence Experiment](#divergence-experiment)
+    - [ROC Experiment](#roc-experiment)
+  - [Hardware Requirements](#hardware-requirements)
 
 ##  Introduction
 
@@ -99,6 +108,7 @@ sudo apt -y update
 sudo apt -y install software-properties-common
 sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt -y install python3.9
+sudo apt -y install python3.9-venv
 alias python=python3.9  # (optional) to simplify the scripts, otherwise, for instance, python3.9 enron_experiment.py [args] is required
 ```
 - Taken from https://linuxize.com/post/how-to-install-python-3-9-on-ubuntu-20-04/
@@ -130,20 +140,38 @@ pip install -e .
 
 ## Dataset Preparation
 
-Enron experiment and annotation experiment rely on the [Enron Email Dataset](https://www.cs.cmu.edu/~enron/)
+### [Github](https://github.com/poptomas/ner-pd)
+
+```enron.csv``` was uploaded via ```git lfs``` to the git repository.
+
+To obtain ```enron.csv```:
+```
+git lfs install
+git lfs pull
+```
+
+### Non-Github
+
+```enron.csv``` was added with the rest of the files - should reside in the root directory of the project.
+
+### Alternative
+
+Enron experiment and annotation experiment rely on the Enron Email Dataset
 which needs to be downloaded, unzipped, and serialized into the CSV format 
-with the compliant structure of the Enron email dataset published on [Kaggle](https://www.kaggle.com/datasets/wcukierski/enron-email-dataset):
+with the compliant structure of an alternative published on [Kaggle](https://www.kaggle.com/datasets/wcukierski/enron-email-dataset):
 
 ```
 python enron_download.py
 ```
 
+Alternatively, the Enron email dataset can be downloaded directly from [Kaggle](https://www.kaggle.com/datasets/wcukierski/enron-email-dataset)
+and moved to the root directory of the project. It was tested that both approaches are interchangeable for the experiments.
 For the other experiments (benchmark, divergence, and ROC), example data
 are provided (contained in the ```data``` directory) to run the experiments with them.
 
 ##  Launch
 
-The project contains various entrypoint "source" files in the root directory
+The project contains various entry point "source" files in the root directory
 based on the experiment which is supposed to be launched:
 - [enron_experiment.py](#enron-experiment)
 - [annotation_experiment.py](#annotation-experiment)
@@ -155,10 +183,10 @@ based on the experiment which is supposed to be launched:
 
 Enron experiment utilizes various variants of models for named entity recognition while processing Enron emails.
 As an output, it produces 
-  - csv pairwise files of comparisons in case a group/full mode launch was utilized 
-    - mainly used for spacy models to find anomalies in named entity differences found between transformer and transition-based models
-  - json produced contains named entity occurrences - used for the KL/JS divergence experiment
-  - csv containing per-model count of each named entity type found 
+  - CSV pairwise files of comparisons in case a group-based mode launch was utilized 
+    - mainly used for spaCy models to find anomalies in named entity differences found between transformer and transition-based models
+  - JSON produced contains named entity occurrences - used for the KL/JS divergence experiment
+  - CSV containing per-model count of each named entity type found 
 
 A command to reproduce the experiment:
 ```
@@ -166,9 +194,7 @@ python enron_experiment.py
 ```
 
 - defaults set to
-  - ```--filename``` being ```enron.csv``` - assuming [Dataset Preparation](#dataset-preparation) 
-  part using the provided ```enron_download.py``` script was conducted, otherwise, for the [Kaggle](https://www.kaggle.com/datasets/wcukierski/enron-email-dataset) downloaded dataset, change ```--filename=emails.csv``` assuming the dataset remains in the root directory
-  - to be reasonably fast for demonstration purposes
+  - ```--filename``` being ```enron.csv``` - assuming provided ```enron.csv``` resides in the root directory by default using the provided  or via [Dataset Preparation](#dataset-preparation)  ```enron_download.py``` script was conducted
     - ```--email_count=100```
     - ```--mode=md```
     - ```--outdir=out```
@@ -210,7 +236,7 @@ python annotation_experiment.py --mode=spacy
 - defaults set to 
     - ```--filename```- by default ```--filename=enron.csv``` - assuming [Dataset Preparation](#dataset-preparation) part using the author's provided script was conducted, otherwise, for the Kaggle downloaded dataset, change it to ```--filename=emails.csv``` assuming the dataset remains in the root directory
     - ```--outdir=sents``` by default
-    -```--mode=spacy``` by default to show the predictive performacne comparison
+    -```--mode=spacy``` by default to show the predictive performance comparison
 - ```--filename```
 - ```--outdir``` - directory where to store the results of the experiment
 - ```--mode``` - same as in the [Enron experiment](#enron-experiment)
@@ -224,7 +250,7 @@ A command to reproduce the experiment:
 python benchmark_experiment.py
 ```
 - defaults set to run on 10 000 sentences (data/seed0_10k.csv) with the best speed:F1-score ratio (otherwise, according to conducted
-measurments, the best predictive performance is available using spaCy transformer - en_core_web_trf)
+measurements, the best predictive performance is available using spaCy transformer - en_core_web_trf)
 
 - ```--mode``` - the choice of the NER model 
   - sm, md, lg - transition-based models by spaCy
@@ -243,7 +269,7 @@ measurments, the best predictive performance is available using spaCy transforme
 ### Divergence Experiment
 
 Divergence experiment visualizes named entity probability distributions. Based on the probability distributions, Jensen-Shannon divergence
-is computed and visualized. The visualization consists of probability distributions (alltogether + pairwise) and JS divergence (alltogether + pairwise).
+is computed and visualized. The visualization consists of probability distributions (all together + pairwise) and JS divergence (all together + pairwise).
 
 A command to reproduce the experiment:
 ```
