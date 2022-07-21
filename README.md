@@ -99,6 +99,7 @@ sudo apt -y update
 sudo apt -y install software-properties-common
 sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt -y install python3.9
+sudo apt -y install python3.9-venv
 alias python=python3.9  # (optional) to simplify the scripts, otherwise, for instance, python3.9 enron_experiment.py [args] is required
 ```
 - Taken from https://linuxize.com/post/how-to-install-python-3-9-on-ubuntu-20-04/
