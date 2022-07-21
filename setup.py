@@ -12,7 +12,7 @@ setuptools.setup(
     description="Additional source files to the bachelor thesis",
     author="Tomáš Pop",
     author_email="tom.pop16@seznam.cz",
-    url="https://github.com/poptomas/bc-thesis/tree/main/implementation",
+    url="https://github.com/poptomas/ner-pd",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),
