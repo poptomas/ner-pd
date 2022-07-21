@@ -4,11 +4,11 @@
 ##  Table of Contents
 
 - [Named Entity Recognition and Its Application to Phishing Detection](#named-entity-recognition-and-its-application-to-phishing-detection)
-  * [Table of Contents](#table-of-contents)
-  * [Introduction](#introduction)
-  * [Technology Used](#technology-used)
-    + [Python](#python)
-    + [External dependencies](#external-dependencies)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Technology Used](#technology-used)
+    - [Python](#python)
+    - [External dependencies](#external-dependencies)
       - [Pandas](#pandas)
       - [PyTorch](#pytorch)
       - [tqdm](#tqdm)
@@ -16,16 +16,24 @@
       - [spaCy](#spacy)
       - [NumPy](#numpy)
       - [flair](#flair)
-      - [spaCy models](#en-core-web--sm--md--lg--trf-)
-  * [Setup](#setup)
-  * [Dataset Preparation](#dataset-preparation)
-  * [Launch](#launch)
-    + [Enron Experiment](#enron-experiment)
-    + [Annotation Experiment](#annotation-experiment)
-    + [Benchmark Experiment](#benchmark-experiment)
-    + [Divergence Experiment](#divergence-experiment)
-    + [ROC Experiment](#roc-experiment)
-  * [Hardware Requirements](#hardware-requirements)
+      - [spaCy models](#spacy-models)
+  - [Setup](#setup)
+    - [1) Download Python 3.9+](#1-download-python-39)
+      - [Linux](#linux)
+        - [Windows](#windows)
+    - [2) Virtual Environment](#2-virtual-environment)
+      - [Linux](#linux-1)
+      - [Windows](#windows-1)
+  - [Dataset Preparation](#dataset-preparation)
+    - [Github](#github)
+    - [Non-Github](#non-github)
+  - [Launch](#launch)
+    - [Enron Experiment](#enron-experiment)
+    - [Annotation Experiment](#annotation-experiment)
+    - [Benchmark Experiment](#benchmark-experiment)
+    - [Divergence Experiment](#divergence-experiment)
+    - [ROC Experiment](#roc-experiment)
+  - [Hardware Requirements](#hardware-requirements)
 
 ##  Introduction
 
@@ -130,6 +138,12 @@ pip install -e .
 ```
 
 ## Dataset Preparation
+
+### Github 
+
+```enron.csv``` was uploaded via git lfs to the git repository.
+
+### Non-Github
 
 Enron experiment and annotation experiment rely on the Enron Email Dataset
 which needs to be downloaded, unzipped, and serialized into the CSV format 
