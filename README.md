@@ -139,7 +139,7 @@ pip install -e .
 
 ## Dataset Preparation
 
-### Github 
+### [Github](https://github.com/poptomas/ner-pd)
 
 ```enron.csv``` was uploaded via git lfs to the git repository.
 
