@@ -1,0 +1,200 @@
+PERSON:Mark
+ORDINAL:second
+PERSON:Pam;PERSON:Roger
+
+
+
+ORG:ElPaso Corporation
+ORG:Enron Corp;PERSON:Ray Bowen;ORG:Enron Corp
+
+
+PERSON:Lisa
+ORG:INTERNAL REVENUE SERVICE
+
+PERSON:Cheryl Nelson Senior;CARDINAL:(713) 345-4693
+TIME:This morning;ORG:Dynegy;TIME:the rest of the morning
+TIME:so many hours
+DATE:by the end of Monday;DATE:on Tuesday
+
+PERSON:David
+
+PERSON:Roman;PERSON:Jason;ORDINAL:19th
+PERSON:Griffith, John;DATE:Tuesday, October 30, 2001 4:55 PM;PERSON:Pimenov, Vladi;GPE:America;PRODUCT:weapon;PERSON:Moon, Eric;DATE:Monday, October 29, 2001 12:59 PM;PERSON:Griffith, John;GPE:America;PRODUCT:weapon;PERSON:Boyt, Eric;DATE:Monday, October 29, 2001 10:41 AM;PERSON:Fitzwater, Loftus;PERSON:Diamond, Russell;PERSON:Little, Kelli;PERSON:Calcagno, Suzanne;PERSON:Moon, Eric;PERSON:Cramer, Chris;GPE:America;PRODUCT:weapon;PERSON:Boyt;PERSON:Eric
+GPE:Sacremento
+ORG:VerticalNet;FAC:eBusiness Training Services
+WORK_OF_ART:FINANCIAL TIMES;ORG:Enron;ORG:Enron;PERSON:Cooper;ORG:Enron;WORK_OF_ART:THE WASHINGTON POST;EVENT:Cooper's Crash Course;WORK_OF_ART:REUTERS;ORG:Enron
+PERSON:Phil;LAW:Public Power Tax;LAW:NAERO language
+
+DATE:on May 21, 2001;DATE:end on June > 29, 2001
+PERSON:Vince;PERSON:Marshall Brown;DATE:on 03/09/2001 07:46:22 > AM;PERSON:Vince Kaminski;PERSON:Vince
+
+PERSON:Sue Mara;GPE:California ISO
+PERSON:Kit
+PERSON:Vince J Kaminski;DATE:on 12/15/2000 04:51 PM;PERSON:patricia dalecka;DATE:on 12/15/2000 04:37:40 PM;DATE:Fri, 15 Dec 2000 16:31:30;PRODUCT:MSN Explorer
+
+PERSON:Drew
+PRODUCT:virus,PRODUCT:computer system;ORG:Cadwalader, Wickersham & Taft
+PRODUCT:power plant;GPE:Oregon;PERSON:Ollech;PERCENT:18%;PERCENT:12%
+PERSON:Sylvia Hu
+PRODUCT:MARKET DATA
+PERSON:McDermott;PERSON:Will,PERSON:Emery;PERSON:Paul J. Pantano, Jr.;CARDINAL:202/756-8026;PERSON:Andrea S. Kramer;CARDINAL:312/984-6480;PERSON:Graham Rowbotham;CARDINAL:011-44-20-7577-6930;PERSON:John J. Sullivan;CARDINAL:212/547-5567;PERSON:David E. Aron;CARDINAL:202/756-8221;PERSON:Paul J. Pantano, Jr.;PERSON:McDermott;PERSON:Will;PERSON:Emery;LOC:600 13th Street, N.W. Washington, DC 20005;CARDINAL:(202) 756-8026;CARDINAL:(202) 756-8087
+PERSON:Jason R Wiesepape;DATE:on 02/03/2000 10:31 AM;ORG:Enron North America Corp.;PERSON:Michael B Rosen;DATE:02/03/2000 10:16 AM;PERSON:Jason R Wiesepape;CARDINAL:2000
+PERSON:Mark Mixon
+PERSON:Steve C Hall;DATE:on 01/19/2001 12:40 PM;PERSON:D Brett Hunsucker;DATE:01/19/2001 10:59 AM;ORG:Volume_Management_Portland;PERSON:Tim Belden;PERSON:Murray P O'Neil;PERSON:Chris Stokley;PERSON:Steve C Hall;PERSON:Tracy Ngo;PERSON:Greg Wolfe;PERSON:Robert Badeer
+EVENT:Holiday
+ORG:Moody's;ORG:Aquila Energy Corporation;ORG:Enron;ORG:UCU;ORG:Enron;GPE:NA;LAW:Gas contract
+LAW:LOI
+PRODUCT:PEP;FAC:Supervisor Services
+
+
+ORG:IMO;ORG:IMO;ORG:IMO
+LAW:Exhibit C to the 76 Agreement;LAW:ENFOLIO Agreement
+
+PERSON:Dave;PERSON:David Forster;DATE:on 03/07/2000 05:36 PM;PERSON:Mario Parra Cardoso;ORG:ENRON;DATE:03/07/2000 04:07 PM;PERSON:David Forster;EVENT:Emission Auctions;PERSON:Louise
+
+
+ORG:Littler Mendelson, P.C.
+ORG:Sabor Settlement;ORG:Unify Settlement;ORG:Enfiber;ORG:EnPower
+DATE:10am;DATE:2pm
+DATE:tomorrow
+PERSON:Kay's Parents
+
+PERSON:Stu Staley;ORG:Enron;DATE:on 06/06/2001 08:13 AM;PERSON:Greg Whalley;PERSON:Liz M Taylor;EVENT:Meeting;DATE:next week;PERSON:Greg;GPE:Houston;DATE:next Wed/Thu 13-14 Jun;ORG:Enron
+PERSON:Kay
+
+PERSON:Carol
+PERSON:Allyson
+PERSON:Jeff;PERSON:Joseph Alamo;DATE:on 09/08/2000 04:17 PM;PERSON:Susan J Mara;DATE:09/07/2000 02:08 PM;PERSON:Jeff Dasovich;PERSON:Mona L Petrochko;PERSON:Tim Belden;PERSON:Mary Hain;PERSON:Paul Kaufman;PERSON:Richard Shapiro;PERSON:James D Steffes;PERSON:Sarah Novosel;PERSON:Robert Badeer;PERSON:Chris Stokley;PERSON:Jeff Richter;PERSON:Joe Hartsoe;PERSON:Sandra McCubbin;PERSON:David Parquet;EVENT:New Report on CA Market;NORP:ISO's Market Surveillance Committee #NOTE CA
+PRODUCT:Natural gas;GPE:Europe;ORG:Enron;ORG:Enron;ORG:eBiz
+PERSON:Sara Shackleton;DATE:25/10/99 12:41;PERSON:Elizabeth Serralheiro;NORP:ESA Legal Management Committee;PERSON:Randy
+ORG:Avaya;PRODUCT:Access Server;CARDINAL:1
+TIME:Hour;CARDINAL:4;CARDINAL:1.96;CARDINAL:1.93;CARDINAL:2;DATE:4/25/01
+CARDINAL:50;CARDINAL:70
+ORG:CREDIT SUISSE GROUP
+PERSON:Michelle Bridges;DATE:up to one business day
+
+
+
+DATE:tomorrow;DATE:Mon
+LAW:Master Agreement;ORG:Enron
+PERSON:VIctor
+PERSON:Nancy;CARDINAL:(707) 251-4870;CARDINAL:(707) 265-5446
+
+DATE:At one time;PERSON:Davis;DATE:in 2002;EVENT:the energy crisis;PERSON:Garry South;PERSON:Fabiani;PERSON:Lehane;LAW:federal policy
+
+CARDINAL:26510
+
+NORP:the Commission
+PERSON:Debra Perlingiere;FAC:Enron North America Corp. Legal Department;LOC:1400 Smith Street, EB 3885 Houston, Texas 77002;CARDINAL:713-853-7658;CARDINAL:713-646-3490
+PERSON:Brad
+PERSON:Andrew
+PERSON:Melissa
+PERSON:Jeff Keeler
+PERSON:Garrett Av;DATE:today
+PERSON:Bobby
+
+
+
+CARDINAL:One-Time
+DATE:on 05/01
+PERSON:Don Baughman Jr.;CARDINAL:31
+
+PERSON:Yana
+
+PERSON:S. Wacker Dr.;GPE:Suite 1500 Chicago;GPE:IL 60606 USA;CARDINAL:312-368-6149;CARDINAL:312-368-2281
+PERSON:Imelda Frayre
+FAC:office;DATE:on Friday
+PERSON:Jim
+
+
+ORG:Enron
+PERSON:Jennifer
+DATE:August;PERSON:Tim Belden;ORG:FERC
+PERSON:Laura
+PERSON:Kim;PERSON:PATRICIA TLAPEK;DATE:Sunday, October 21, 2001 1:10 AM;PERSON:Ward, Kim S;GPE:Houston;PERSON:Kim
+
+ORDINAL:the latest
+CARDINAL:1;CARDINAL:97.03;CARDINAL:96.84;CARDINAL:2;DATE:4/26/01
+
+FAC:CreditCheck Monitoring Service
+DATE:1999;ORG:StockSelector.com
+PERSON:Bill;ORG:Enron;PERSON:Miller;PERSON:Virgo
+PERSON:Stacy
+PERSON:Irena
+
+
+EVENT:RCR process
+
+PRODUCT:gas
+
+FAC:The Office of the Chairman;ORG:Enron Americas;PERSON:Chris Abel;ORG:RAC
+CARDINAL:713-853-5800;CARDINAL:713-646-8272;CARDINAL:713-539-4760
+PERSON:Paul Johnson;ORG:CPC;CARDINAL:(281) 497-8595
+
+
+PERSON:Ebner, Daniel;DATE:Monday, December 11, 2000 1:55 PM;PERSON:Scott Palmer;DATE:This weekend;PERSON:Richard
+PERSON:Heidi Withers;ORG:PG&E;GPE:Texas
+PERSON:Jeff
+PERSON:Dave;ORG:Enron;ORG:Enron
+
+DATE:that weekend
+GPE:New York;CARDINAL:+1 212 571 4332;GPE:London;CARDINAL:+44 171 430 2888;GPE:Singapore;CARDINAL:+65 332 0700
+
+PERSON:Stephanie;PERSON:Panus, Stephanie;DATE:Tuesday, October 16, 2001 1:41 PM;PERSON:Taylor, Mark E;DATE:October 16, 2001
+PERSON:Eric Bass;DATE:on 09/29/2000 08:45 AM;ORG:Enron North America Corp.;PERSON:Eric Bass;DATE:09/29/2000 08:39 AM;PERSON:O'Neal D Winfree;PERSON:Garner;PERSON:Toomer;PERSON:Schroeder;PERSON:Terrell;PERSON:Rice
+
+PERSON:Vince J Kaminski;DATE:on 03/30/2000 05:16 PM;PERSON:Vince J Kaminski;DATE:03/30/2000 05:15 PM;PERSON:Vince
+PERSON:Adam;PERSON:Adam Johnson;DATE:on 03/23/2001 08:50 AM;PERSON:Adam Johnson;DATE:03/23/2001 08:31 AM;PERSON:Andy Zipper;PERSON:Michael Bridges;PERSON:Sheri Thomas;PERSON:Torrey Moorer;DATE:Mar22;PRODUCT:Power;PRODUCT:Gas
+
+GPE:Houston;GPE:Houston's;DATE:May 29, 2001;FAC:Hyatt Regency Imperial Ballroom;DATE:10:45a;DATE:11:30a;EVENT:Registration & Networking;DATE:11:30a;DATE:1:30p;EVENT:Luncheon & Program
+
+
+ORG:CEERT
+DATE:tomorrow, Friday May 18 at 11 a.m. PDT;PERSON:Maxine Enciso;CARDINAL:310/444-1303;PERSON:Richard Wheatley;CARDINAL:713/207-5881
+
+CARDINAL:4
+
+DATE:Wednesday, November 21st;PRODUCT:Tacos;PRODUCT:Fruit;ORG:Domino's;PRODUCT:Pizza;PRODUCT:Pizza;PRODUCT:Soft Drinks;DATE:Monday, November 27th;PRODUCT:Pastries;PRODUCT:Fruit;ORG:James Coney Island;PRODUCT:Chilli;PRODUCT:Cheese;PRODUCT:Onions
+PERSON:Transco
+PERSON:Sally;PERSON:David Oxley
+PERSON:Brazos's
+PERSON:Rob
+CARDINAL:6X
+
+
+GPE:17110 Cedar Rd.
+
+PERSON:Alhamd
+PERSON:Karen O'Day;PERSON:Mary Griff Gray;DATE:03/12/2001 09:46 AM;PERSON:Tana Jones;PERSON:Karen O'Day;PRODUCT:Oil;EVENT:EOL
+
+
+PERSON:Norma Chavez;FAC:International Tax;PERSON:Sarah Knott;ORG:ENW;GPE:London
+FAC:office;FAC:HQ;GPE:US;ORG:ENA
+GPE:Maryland 9
+
+PRODUCT:virus;PRODUCT:computer;PRODUCT:virus
+
+PERSON:Julie
+GPE:Australia
+
+PERSON:Victoria
+
+
+CARDINAL:593949
+PERSON:Jeff
+FAC:office
+MONEY:$1.3MM
+
+MONEY:$170.00 MC
+PERSON:Patti
+CARDINAL:last 2
+DATE:by Wednesday Afternoon
+PERSON:cullpepper;PERSON:E .George;PERSON:A sMITH ;PERSON:ANTONIO FREEMAN;PERSON:JERRY RICE;PERSON:T. GONZALEZ;PERSON:M GRAMATICA;ORG:NY GIANTS
+DATE:2002;WORK_OF_ART:Rose Parade
+DATE:Thursday, July 05, 2001 10:10 AM
+
+DATE:Tuesday, November 13 Time: 8 a.m.;DATE:4 p.m.;FAC:Enron Health Center;ORG:Enron;MONEY:$10
+
+
+
+
