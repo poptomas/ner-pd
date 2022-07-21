@@ -27,6 +27,7 @@
   - [Dataset Preparation](#dataset-preparation)
     - [Github](#github)
     - [Non-Github](#non-github)
+    - [Alternative](#alternative)
   - [Launch](#launch)
     - [Enron Experiment](#enron-experiment)
     - [Annotation Experiment](#annotation-experiment)
@@ -144,6 +145,10 @@ pip install -e .
 ```enron.csv``` was uploaded via git lfs to the git repository.
 
 ### Non-Github
+
+```enron.csv``` was added with the rest of the files
+
+### Alternative
 
 Enron experiment and annotation experiment rely on the Enron Email Dataset
 which needs to be downloaded, unzipped, and serialized into the CSV format 
